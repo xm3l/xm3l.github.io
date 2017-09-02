@@ -3,8 +3,7 @@
 //<![CDATA[
 function html2entities(){
 var re=/[د ج ح خ ه ع غ ف ق ث ص ض ط ك م ن ت ذ ا ل أ إ ب ي س ش ظ ز و ة ى لا ر ؤ ء ئ d g 7 5 h 3 8 f q th S D T k m n t z a a a e l b y a s 4 Z z w h la r 2 2 2]/g
-for (i=0; i<arguments.length; i++)
-arguments[i].value=arguments[i].value.replace(re, function(m){return replacechar(m)})
+arguments[0].value=arguments[0].value.replace(re, function(m){return replacechar(m)}
 }
 
 function replacechar(match){
